@@ -21,7 +21,7 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    'no-console': 'error',
+    'no-console': 'warn',
   },
   env: {
     node: true,
