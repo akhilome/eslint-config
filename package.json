@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-akhilome",
+  "name": "@akhilome/eslint-config",
   "version": "0.0.1",
   "description": "akhilome custom eslint config",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "@typescript-eslint/parser": "^5.10.0",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jest": "^25.7.0",
+    "eslint-plugin-jest": "^26.2.2",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1"
   },
