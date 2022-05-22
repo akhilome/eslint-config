@@ -1,6 +1,6 @@
 {
   "name": "@akhilome/eslint-config",
-  "version": "0.0.1-0",
+  "version": "1.0.0",
   "description": "akhilome custom eslint config",
   "main": "index.js",
   "author": "Kizito Akhilome <kizito@akhilo.me>",
