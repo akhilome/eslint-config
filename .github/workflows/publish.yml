@@ -20,7 +20,7 @@ jobs:
         run: git config user.name ${{ secrets.PUBLISH_USERNAME }} && git config user.email ${{ secrets.PUBLISH_EMAIL }}
 
       - name: Install np
-        run: yarn global add @akhilome/np@7.6.1-patch
+        run: yarn global add @akhilome/np@latest
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
@@ -44,7 +44,7 @@ jobs:
         run: git config user.name ${{ secrets.PUBLISH_USERNAME }} && git config user.email ${{ secrets.PUBLISH_EMAIL }}
 
       - name: Install np
-        run: yarn global add @akhilome/np@7.6.1-patch
+        run: yarn global add @akhilome/np@latest
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
@@ -68,7 +68,7 @@ jobs:
         run: git config user.name ${{ secrets.PUBLISH_USERNAME }} && git config user.email ${{ secrets.PUBLISH_EMAIL }}
 
       - name: Install np
-        run: yarn global add @akhilome/np@7.6.1-patch
+        run: yarn global add @akhilome/np@latest
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
@@ -92,7 +92,7 @@ jobs:
         run: git config user.name ${{ secrets.PUBLISH_USERNAME }} && git config user.email ${{ secrets.PUBLISH_EMAIL }}
 
       - name: Install np
-        run: yarn global add @akhilome/np@7.6.1-patch
+        run: yarn global add @akhilome/np@latest
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
