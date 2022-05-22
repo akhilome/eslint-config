@@ -1,10 +1,22 @@
 {
   "name": "@akhilome/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "akhilome custom eslint config",
   "main": "index.js",
   "author": "Kizito Akhilome <kizito@akhilo.me>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhilome/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akhilome/eslint-config/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "homepage": "https://github.com/akhilome/eslint-config#readme",
   "dependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
@@ -24,5 +36,9 @@
     "typescript": {
       "optional": true
     }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }

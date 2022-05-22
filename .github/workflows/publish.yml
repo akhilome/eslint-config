@@ -20,13 +20,13 @@ jobs:
         run: git config user.name ${{ secrets.PUBLISH_USERNAME }} && git config user.email ${{ secrets.PUBLISH_EMAIL }}
 
       - name: Install np
-        run: yarn global add np
+        run: yarn global add @akhilome/np@7.6.1-patch
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
       - name: Create & publish new release
-        run: np prerelease --tag next
+        run: np prerelease --tag next --no-collab-check
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -44,13 +44,13 @@ jobs:
         run: git config user.name ${{ secrets.PUBLISH_USERNAME }} && git config user.email ${{ secrets.PUBLISH_EMAIL }}
 
       - name: Install np
-        run: yarn global add np
+        run: yarn global add @akhilome/np@7.6.1-patch
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
       - name: Create & publish new release
-        run: np patch
+        run: np patch --no-collab-check
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -68,13 +68,13 @@ jobs:
         run: git config user.name ${{ secrets.PUBLISH_USERNAME }} && git config user.email ${{ secrets.PUBLISH_EMAIL }}
 
       - name: Install np
-        run: yarn global add np
+        run: yarn global add @akhilome/np@7.6.1-patch
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
       - name: Create & publish new release
-        run: np minor
+        run: np minor --no-collab-check
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -92,12 +92,12 @@ jobs:
         run: git config user.name ${{ secrets.PUBLISH_USERNAME }} && git config user.email ${{ secrets.PUBLISH_EMAIL }}
 
       - name: Install np
-        run: yarn global add np
+        run: yarn global add @akhilome/np@7.6.1-patch
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
       - name: Create & publish new release
-        run: np major
+        run: np major --no-collab-check
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
