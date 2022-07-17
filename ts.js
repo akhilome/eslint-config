@@ -21,6 +21,9 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:prettier/recommended',
   ],
-  rules,
+  rules: {
+    ...rules,
+    '@typescript-eslint/no-misused-promises': 'warn',
+  },
   env,
 };
