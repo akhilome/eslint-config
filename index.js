@@ -11,6 +11,7 @@ module.exports = {
   root: true,
   plugins: ['prettier', 'jest'],
   extends: ['eslint:recommended', 'plugin:jest/recommended', 'plugin:prettier/recommended'],
+  parserOptions: { ecmaVersion: 'latest' },
   rules,
   env,
 };
